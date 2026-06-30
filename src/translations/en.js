@@ -90,16 +90,6 @@ export const en = {
         highlight: true,
         tag: 'Degree project',
       },
-      {
-        name: 'Personal Portfolio',
-        description:
-          'This portfolio — built with React, Framer Motion, bilingual EN/FR, with a clean responsive design.',
-        tech: ['React', 'Framer Motion', 'CSS'],
-        github: 'https://github.com/MaheryJeremie',
-        live: null,
-        highlight: true,
-        tag: 'Design',
-      },
     ],
   },
   skills: {

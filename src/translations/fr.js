@@ -91,16 +91,6 @@ export const fr = {
         highlight: true,
         tag: 'Projet de Licence',
       },
-      {
-        name: 'Portfolio Personnel',
-        description:
-          'Ce portfolio — fait avec React, Framer Motion, bilingue EN/FR, avec un design responsive et épuré.',
-        tech: ['React', 'Framer Motion', 'CSS'],
-        github: 'https://github.com/MaheryJeremie',
-        live: null,
-        highlight: true,
-        tag: 'Design',
-      },
     ],
   },
   skills: {
