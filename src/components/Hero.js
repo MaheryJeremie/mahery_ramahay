@@ -51,23 +51,26 @@ export default function Hero() {
               </span>
             </motion.h1>
 
-            <motion.div
-              className="hero__details"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.55, duration: 0.85, ease: [0.16, 1, 0.3, 1] }}
-            >
-              <div className="hero__meta">
+            <div className="hero__details">
+              <motion.div
+                className="hero__meta"
+                initial={{ opacity: 0, y: 16 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+              >
                 <span className="hero__eyebrow">{t.hero.eyebrow}</span>
                 <div className="hero__avail">
                   <span className="hero__avail-dot" />
                   <span>{t.hero.available}</span>
                 </div>
-              </div>
+              </motion.div>
 
-              <div
+              <motion.div
                 className="hero__photo"
-                style={{ transform: `translateY(${photoShift}px)` }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.35, duration: 1.1, ease: [0.16, 1, 0.3, 1] }}
+                style={{ y: photoShift }}
               >
                 <ProfileImage
                   className="hero__photo-img"
@@ -75,11 +78,23 @@ export default function Hero() {
                   loading="eager"
                 />
                 <div className="hero__photo-scrim" aria-hidden="true" />
-              </div>
+              </motion.div>
 
-              <p className="hero__desc">{t.hero.description}</p>
+              <motion.p
+                className="hero__desc"
+                initial={{ opacity: 0, y: 16 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.65, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+              >
+                {t.hero.description}
+              </motion.p>
 
-              <div className="hero__foot">
+              <motion.div
+                className="hero__foot"
+                initial={{ opacity: 0, y: 16 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.8, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+              >
                 <div className="hero__cta">
                   <button
                     type="button"
@@ -97,8 +112,8 @@ export default function Hero() {
                     {t.hero.ctaGithub}
                   </a>
                 </div>
-              </div>
-            </motion.div>
+              </motion.div>
+            </div>
           </div>
         </div>
       </div>

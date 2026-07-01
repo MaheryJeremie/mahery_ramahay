@@ -94,19 +94,6 @@
   position: relative;
 }
 
-.skills__tabs::after {
-  content: '→';
-  display: none;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 0.75rem;
-  color: var(--dim);
-  pointer-events: none;
-  padding-right: 0.25rem;
-}
-
 .skills__tab {
   font-family: var(--font-display);
   font-size: 0.72rem;
@@ -218,9 +205,7 @@
     -webkit-overflow-scrolling: touch;
     flex-wrap: nowrap;
     scrollbar-width: thin;
-    padding-right: 1.5rem;
   }
-  .skills__tabs::after { display: block; }
   .skills__tab {
     white-space: nowrap;
     flex-shrink: 0;
